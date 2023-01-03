@@ -15,5 +15,11 @@ RSpec.describe Exhibit do
       expect(exhibit.cost).to eq(0)
     end
 
+    it 'can add patrons' do
+      patron_1 = Patron.new("Bob", 20)
+      expect(patron_1.name).to eq("Bob")
+      
+    end
+
   end
 end
